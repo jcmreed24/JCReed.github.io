@@ -9,13 +9,11 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/Schematic%20%26%20PCB%20Design/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/pendulum/">
       
       
-        <link rel="prev" href="../Component%20Selection/">
+        <link rel="prev" href="../robot/">
       
-      
-        <link rel="next" href="../Bill%20of%20Materials/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -26,7 +24,7 @@
 
     
       
-        <title>Schematic &amp; PCB Design - JC Reed - Engineering Projects</title>
+        <title>Inverted Pendulum Dynamic System Modeling - JC Reed - Engineering Projects</title>
       
     
     
@@ -90,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#schematic-design" class="md-skip">
+        <a href="#system-model" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Schematic &amp; PCB Design
+              Inverted Pendulum Dynamic System Modeling
             
           </span>
         </div>
@@ -235,12 +233,29 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Component%20Selection/" class="md-tabs__link">
+      <a href="../hmi/" class="md-tabs__link">
         
   
     
   
-  Component Selection
+  Embedded Systems Human Machine Interface (HMI)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../robot/" class="md-tabs__link">
+        
+  
+    
+  
+  Computer Vision Guided Pick-and-Place Robot
 
       </a>
     </li>
@@ -259,58 +274,7 @@
   
     
   
-  Schematic &amp; PCB Design
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Bill%20of%20Materials/" class="md-tabs__link">
-        
-  
-    
-  
-  Bill of Materials
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Application%20Programming%20Interface%20%28API%29/" class="md-tabs__link">
-        
-  
-    
-  
-  Application Programming Interface (API)
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Resources/" class="md-tabs__link">
-        
-  
-    
-  
-  Resources
+  Inverted Pendulum Dynamic System Modeling
 
       </a>
     </li>
@@ -415,11 +379,31 @@
   
   
     <li class="md-nav__item">
-      <a href="../Component%20Selection/" class="md-nav__link">
+      <a href="../hmi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Component Selection
+    Embedded Systems Human Machine Interface (HMI)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../robot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision Guided Pick-and-Place Robot
   </span>
   
 
@@ -446,7 +430,7 @@
           
   
   <span class="md-ellipsis">
-    Schematic &amp; PCB Design
+    Inverted Pendulum Dynamic System Modeling
   </span>
   
 
@@ -457,7 +441,7 @@
         
   
   <span class="md-ellipsis">
-    Schematic &amp; PCB Design
+    Inverted Pendulum Dynamic System Modeling
   </span>
   
 
@@ -477,55 +461,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#schematic-design" class="md-nav__link">
+  <a href="#system-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Schematic Design
+      System Model
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#engineering-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      Engineering Analysis
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#printed-circuit-board-pcb-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      Printed Circuit Board (PCB) Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Printed Circuit Board (PCB) Design">
+    <nav class="md-nav" aria-label="Engineering Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#links-for-high-resolution-visibility" class="md-nav__link">
+  <a href="#dynamic-system-modeling" class="md-nav__link">
     <span class="md-ellipsis">
-      Links for High Resolution Visibility
+      Dynamic System Modeling
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#decision-making-process-meeting-requirements" class="md-nav__link">
+  <a href="#numerical-simulation" class="md-nav__link">
     <span class="md-ellipsis">
-      Decision Making Process &amp; Meeting Requirements
+      Numerical Simulation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#version-20-of-pcb-design" class="md-nav__link">
+  <a href="#controls-engineering-foundations" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 2.0 of PCB Design
+      Controls Engineering Foundations
     </span>
   </a>
   
@@ -537,9 +512,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#team-pcb-design" class="md-nav__link">
+  <a href="#simulation-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Team PCB Design
+      Simulation Results
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simulation Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cart-position-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cart Position Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendulum-angle-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pendulum Angle Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matlab-model-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      MATLAB Model Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Skills Demonstrated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Outcomes
     </span>
   </a>
   
@@ -549,66 +575,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Bill%20of%20Materials/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Bill of Materials
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Application%20Programming%20Interface%20%28API%29/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Application Programming Interface (API)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Resources/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Resources
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -638,55 +604,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#schematic-design" class="md-nav__link">
+  <a href="#system-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Schematic Design
+      System Model
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#engineering-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      Engineering Analysis
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#printed-circuit-board-pcb-design" class="md-nav__link">
-    <span class="md-ellipsis">
-      Printed Circuit Board (PCB) Design
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Printed Circuit Board (PCB) Design">
+    <nav class="md-nav" aria-label="Engineering Analysis">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#links-for-high-resolution-visibility" class="md-nav__link">
+  <a href="#dynamic-system-modeling" class="md-nav__link">
     <span class="md-ellipsis">
-      Links for High Resolution Visibility
+      Dynamic System Modeling
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#decision-making-process-meeting-requirements" class="md-nav__link">
+  <a href="#numerical-simulation" class="md-nav__link">
     <span class="md-ellipsis">
-      Decision Making Process &amp; Meeting Requirements
+      Numerical Simulation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#version-20-of-pcb-design" class="md-nav__link">
+  <a href="#controls-engineering-foundations" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 2.0 of PCB Design
+      Controls Engineering Foundations
     </span>
   </a>
   
@@ -698,9 +655,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#team-pcb-design" class="md-nav__link">
+  <a href="#simulation-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Team PCB Design
+      Simulation Results
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simulation Results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cart-position-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cart Position Response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pendulum-angle-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pendulum Angle Response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matlab-model-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      MATLAB Model Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-skills-demonstrated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Skills Demonstrated
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Outcomes
     </span>
   </a>
   
@@ -721,7 +729,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/Schematic &amp; PCB Design.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/pendulum.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
     </a>
@@ -729,48 +737,99 @@
   
 
 
-  <h1>Schematic &amp; PCB Design</h1>
+<h1 style="text-align: center; font-size: 4rem; margin-bottom: 0.5rem;">
+Inverted Pendulum Dynamic System Modeling
+</h1>
 
-<h2 id="schematic-design"><strong>Schematic Design</strong></h2>
-<h2 id="_1"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/HMI-Schematic.png" data-desc-position="bottom"><img alt="Human Machine Interface (HMI) Schematic" src="../static/images/HMI-Schematic.png"></a></h2>
-<h2 id="printed-circuit-board-pcb-design"><strong>Printed Circuit Board (PCB) Design</strong></h2>
-<p><strong>Front View</strong>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/HMI-PCB.png" data-desc-position="bottom"><img alt="Human Machine Interface (HMI) Printed Circuit Board (Front)" src="../static/images/HMI-PCB.png"></a>
-<strong>Back View</strong>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/PCB%20%28Back%29.png" data-desc-position="bottom"><img alt="Human Machine Interface (HMI) Printed Circuit Board (Back)" src="../static/images/PCB%20%28Back%29.png"></a></p>
-<h3 id="links-for-high-resolution-visibility"><strong>Links for High Resolution Visibility</strong></h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/JC%20Reed%20-%20Simulink%20Pendulum.png" data-desc-position="bottom"><img alt="Simulink Model Overview" src="../static/images/JC%20Reed%20-%20Simulink%20Pendulum.png"></a></p>
+<div style="max-width: 900px; margin: auto;">
+
+<h2 style="margin-top: 1.5rem;">Modeling &amp; Simulation Project</h2>
+
+<strong>Arizona State University Polytechnic</strong><br>
+<strong>Course:</strong> Transforms &amp; Systems Modeling (EGR433)
+
+<p>
+Developed a nonlinear dynamic model of an inverted pendulum on a cart using MATLAB and Simulink. The project focused on deriving the system equations of motion, implementing the coupled dynamics within Simulink, and analyzing the open-loop response of the cart-pendulum system.
+</p>
+
+<p>
+The simulation provided insight into the behavior of unstable mechanical systems and served as a foundation for future controller design techniques commonly used in robotics, automation, and aerospace applications.
+</p>
+
+</div>
+
+<hr>
+<h2 id="system-model">System Model</h2>
+<p>The model implemented the nonlinear equations of motion governing both cart translation and pendulum rotation. Simulink integrator blocks were used to compute position, velocity, angular position, and angular velocity while capturing the coupling between cart motion and pendulum dynamics.</p>
+<p>The simulation incorporated system parameters including cart mass, pendulum mass, rotational inertia, damping, and gravitational effects to accurately represent real-world behavior.</p>
+<hr>
+<h2 id="engineering-analysis">Engineering Analysis</h2>
+<h3 id="dynamic-system-modeling">Dynamic System Modeling</h3>
+<p>Developed a mathematical representation of an inverted pendulum system and implemented the governing differential equations within Simulink. The model captured the interaction between translational and rotational motion while accounting for gravitational and damping effects.</p>
+<h3 id="numerical-simulation">Numerical Simulation</h3>
+<p>Utilized MATLAB and Simulink to simulate system response over time and evaluate the behavior of the coupled mechanical system under open-loop conditions.</p>
+<h3 id="controls-engineering-foundations">Controls Engineering Foundations</h3>
+<p>Analyzed the response of an inherently unstable system frequently used as a benchmark problem in controls engineering. The project provided practical experience with state variables, system dynamics, stability concepts, and simulation-based validation.</p>
+<hr>
+<h2 id="simulation-results">Simulation Results</h2>
+<h3 id="cart-position-response">Cart Position Response</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/Pendulum%20Position.png" data-desc-position="bottom"><img alt="Cart Position Response" src="../static/images/Pendulum%20Position.png"></a></p>
+<p>The position response illustrates the translational movement of the cart over time as it reacts to the pendulum dynamics. Oscillatory behavior is observed due to the interaction between the cart and pendulum system.</p>
+<hr>
+<h3 id="pendulum-angle-response">Pendulum Angle Response</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/Pendulum%20Angle.png" data-desc-position="bottom"><img alt="Pendulum Angle Response" src="../static/images/Pendulum%20Angle.png"></a></p>
+<p>The angular response demonstrates the oscillatory motion of the pendulum throughout the simulation. The results highlight the unstable nature of the inverted pendulum problem and illustrate the influence of damping and system inertia on overall behavior.</p>
+<hr>
+<h2 id="matlab-model-parameters">MATLAB Model Parameters</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/MATLAB%20parameters.png" data-desc-position="bottom"><img alt="MATLAB Parameters" src="../static/images/MATLAB%20parameters.png"></a></p>
+<p>The simulation utilized physical system parameters including:</p>
 <ul>
-<li><a href="../Direct%20Links/IndividualSchematic-HMI%28PDF%29.pdf">PDF (Schematic)</a></li>
-<li><a href="../Direct%20Links/egr314-pcb.pdf">PDF (PCB)</a></li>
-<li><a href="../Direct%20Links/JC%20Reed%20-%20HMI%20-%20ECAD%20%28Schematic%20%26%20PCB%29.zip">Combined ECAD Folder (Schematic + PCB)</a></li>
+<li>Cart Mass</li>
+<li>Pendulum Mass</li>
+<li>Rotational Inertia</li>
+<li>Damping Coefficient</li>
+<li>Pendulum Length</li>
+<li>Gravitational Acceleration</li>
 </ul>
-<h3 id="decision-making-process-meeting-requirements"><strong>Decision Making Process &amp; Meeting Requirements</strong></h3>
-<p>The HMI subsystem schematic/PCB integrates power regulation, user input mechanisms, visual feedback elements, and inter-subsystem communication capabilities into a cohesive, reliable design — fulfilling both the technical product requirements and user interaction goals for our middle school-targeted STEM exhibit.</p>
-<p>The ESP32-S3-WROOM-1-N4 microcontroller forms the core of the design, connected to three GPIO-driven pushbuttons, an I2C OLED display, and UART lines that enable communication with other subsystems. Each pushbutton incorporates hardware debouncing via 10kΩ pull-up resistors complemented by software filtering to ensure clean signal transitions and responsive user interaction. The I2C data lines (SDA/SCL) feature 4.7kΩ pull-up resistors that maintain reliable OLED display communication in accordance with I2C specifications.</p>
-<p>To satisfy the 3.3V system voltage requirement, the schematic employs the L6981C33DR buck switching regulator with jumper-selectable power input from either a 9V 3.0A barrel jack or 5V USB source. Input/output capacitors positioned at the regulator's VIN and VOUT pins maintain voltage stability, while local decoupling capacitors near the ESP32 and display minimize noise and ensure stable operation.</p>
-<p>Programming and debugging capabilities include USB D+ and D− lines routed to the appropriate ESP32-S3 USB-capable pins (IO19, 20) for native USB programming, a standard BOOT circuit utilizing IO0, and the EN pin with pull-up to facilitate manual flashing when necessary. Two UART headers enable communication with other subsystems, fulfilling our serial protocol requirement, while a current-limited blue status LED provides users with a clear power-on indication — an essential visual cue for exhibit functionality.</p>
-<p>The layout features widened power traces to accommodate expected current flow safely. Although only the top layer includes a ground plane for improved signal integrity and thermal performance, the absence of a bottom-side ground plane represents a minor oversight for future revision. Nevertheless, the component placement and routing support reliable operation and serviceability.</p>
-<p>The schematic successfully incorporates all required functionalities into a logical, robust system — enabling intuitive user interaction, meeting power and communication specifications, and implementing standard hardware design practices such as decoupling, pull-ups, and regulated voltage supply to ensure long-term functionality in the educational environment.</p>
-<h3 id="version-20-of-pcb-design"><strong>Version 2.0 of PCB Design</strong></h3>
-<p>While my schematic design was functionally sound—resulting in a fully working HMI subsystem—there are several hardware layout issues I would address in a Version 2.0 revision. Most notably, I initially routed the UART lines to RX0 and TX0, which conflicted with the ESP32’s USB REPL interface. I had to bypass this using jumper wires to reassign UART to alternate GPIOs, which worked but was a workaround rather than a clean solution.</p>
-<p>Additionally, I accidentally mirrored the pinout of my 2x4 UART header, reversing the order of pins 1–8. This made the pre-designed ribbon cables incompatible with the PCB and forced me to fabricate a custom cable to match our team's required format—where pin 1 was 3.3V power, pin 2 was communication, and pin 8 was ground.</p>
-<p>Another layout issue was the placement of the OLED header, which ended up too close to the user pushbuttons. To resolve this, I 3D-printed a small riser and used fly wires to elevate and reposition the screen.</p>
-<p>Finally, while I included a ground plane on the top layer, I neglected to fill the bottom layer, which would have improved noise immunity and thermal performance. These changes would significantly improve reliability and usability in a future revision.</p>
-<h2 id="team-pcb-design"><strong>Team PCB Design</strong></h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../static/images/Team201.png" data-desc-position="bottom"><img alt="Team 201's PCB Designs" src="../static/images/Team201.png"></a></p>
-<p>As pictured above, Team 201 comprised four members, each assigned to a specific subsystem (left-to-right): <strong>Human-Machine Interface (HMI), Sensor, MQTT, and Actuator</strong> — arranged in a daisy-chain communication configuration that reflected the logical progression of user interaction. This sequence began with the HMI initiating the process, followed by the sensor detecting a ball, MQTT functioning as the communication bridge, and concluding with the actuator repositioning the ball according to user selection.</p>
-<p>Our design decisions responded directly to both project goals and class requirements — particularly the mandated UART-based message structure and 2x4 ribbon cable pinout standard that ensured cross-subsystem compatibility while providing a unified technical foundation for development.</p>
-<p>Microcontroller selection balanced practicality and performance considerations — implementing the ESP32 for both HMI and MQTT subsystems due to our familiarity with it from previous laboratory exercises and its compatibility with I2C, UART, and USB programming protocols. Conversely, PIC microcontrollers served the sensor and actuator subsystems, selected for their precise timing capabilities and robust hardware interfacing options.</p>
-<p>Integration and debugging processes occurred collaboratively to validate communication pathways and system workflow. My HMI hardware decisions — including UART pin mapping and header configuration — required careful coordination with teammates to ensure seamless connectivity and interaction throughout the Element Sorter device.</p>
+<p>These parameters were used to construct a realistic dynamic model representative of a physical inverted pendulum system.</p>
+<hr>
+<h2 id="technical-skills-demonstrated">Technical Skills Demonstrated</h2>
+<div style="display: flex; gap: 4rem;">
+
+<ul>
+<li>MATLAB</li>
+<li>Simulink</li>
+<li>Dynamic System Modeling</li>
+<li>Differential Equations</li>
+<li>Numerical Simulation</li>
+</ul>
+
+<ul>
+<li>Controls Engineering</li>
+<li>Mechanical System Analysis</li>
+<li>System Dynamics</li>
+<li>Engineering Mathematics</li>
+<li>Data Analysis</li>
+</ul>
+
+</div>
+
+<hr>
+<h2 id="key-outcomes">Key Outcomes</h2>
+<ul>
+<li>Developed a complete nonlinear Simulink model of an inverted pendulum system</li>
+<li>Simulated coupled translational and rotational dynamics</li>
+<li>Evaluated open-loop response characteristics of an unstable mechanical system</li>
+<li>Applied engineering mathematics to model real-world physical behavior</li>
+<li>Strengthened foundational knowledge in controls engineering and dynamic system analysis</li>
+</ul>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -800,7 +859,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../Component%20Selection/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Component Selection">
+          <a href="../robot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Computer Vision Guided Pick-and-Place Robot">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -810,27 +869,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Component Selection
+                Computer Vision Guided Pick-and-Place Robot
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../Bill%20of%20Materials/" class="md-footer__link md-footer__link--next" aria-label="Next: Bill of Materials">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Bill of Materials
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
-            </div>
-          </a>
         
       </nav>
     
