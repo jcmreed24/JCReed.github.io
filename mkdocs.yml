@@ -47,11 +47,9 @@ draft_docs: |
 nav: 
  - Homepage: 'index.md'
  - Robotic Exoskeleton for Glovebox Use: 'exoskeleton.md'
- - Component Selection: 'Component Selection.md'
- - Schematic & PCB Design: 'Schematic & PCB Design.md'
- - Bill of Materials: 'Bill of Materials.md'
- - Application Programming Interface (API): 'Application Programming Interface (API).md'
- - Resources: 'Resources.md'
+ - Embedded Systems Human Machine Interface (HMI): 'hmi.md'
+ - Computer Vision Guided Pick-and-Place Robot: 'robot.md'
+ - Inverted Pendulum Dynamic System Modeling: 'pendulum.md'
   
 plugins:
   - search

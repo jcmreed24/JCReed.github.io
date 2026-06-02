@@ -38,106 +38,37 @@ This project was awarded the <strong>Principled Innovation Award</strong> for en
 
 ## Engineering Objectives
 
-The project addressed ergonomic and operational challenges experienced by LANL glovebox operators, including:
+The project was developed in partnership with Los Alamos National Laboratory to address the physical strain experienced by glovebox operators performing repetitive tasks in hazardous environments. Extended periods of shoulder elevation and arm extension can lead to fatigue, reduced productivity, and long-term musculoskeletal injuries.
 
-- Sustained awkward shoulder and arm positioning
-- Muscle fatigue during repetitive operations
-- Reduced workplace efficiency
-- Long-term musculoskeletal injury risks
-- ALARA compliance requirements for hazardous environments
-
-The exoskeleton was engineered to:
-- Reduce upper-body fatigue
-- Improve operator endurance
-- Preserve full working mobility
-- Support multiple body sizes and anthropometric ranges
-- Remain modular and field-serviceable
+Our objective was to design a wearable robotic exoskeleton capable of reducing upper-body fatigue while maintaining operator mobility, comfort, and safety. The final design emphasized ergonomic adaptability, modular construction, and compatibility with a wide range of user body dimensions.
 
 ---
 
-## Mechanical Engineering Contributions
+## Key Engineering Contributions
 
-### CAD Design and Mechanical Systems
-- Designed custom exoskeleton components using CAD software
-- Developed modular actuator mounting systems
-- Engineered rotational joints to preserve natural arm movement
-- Designed adjustable arm cuff assemblies for operator comfort
-- Integrated universal joints and support structures for multi-axis mobility
+### Mechanical Design & Ergonomics
 
-### Rapid Prototyping
-- Produced multiple prototype iterations using 3D printing
-- Utilized PLA and TPU materials depending on flexibility requirements
-- Refined mechanical assemblies through iterative testing
+Designed and modeled a complete wearable exoskeleton system using CAD software. The mechanical architecture incorporated custom support structures, rotational joints, actuator mounting systems, and adjustable arm cuffs that preserved natural arm movement while transferring loading forces into the hips.
 
-### Ergonomic Engineering
-- Applied anthropometric analysis using ANSUR II datasets
-- Designed sizing systems accommodating:
-  - 5th percentile female
-  - through 95th percentile male
-- Reduced pressure concentration around sensitive arm regions
+Human-centered design principles were applied throughout development using anthropometric data from the ANSUR II database to accommodate users ranging from the 5th percentile female to the 95th percentile male. Multiple prototype iterations were manufactured and refined through 3D printing and ergonomic testing.
 
----
+### Embedded Systems & Electronics
 
-## Electrical and Embedded Systems Engineering
+Developed the embedded control system responsible for actuator operation and user interaction. The system integrated an Arduino-based controller, motor driver circuitry, lithium-ion power distribution, and custom electrical housings designed for field deployment.
 
-### Embedded Controls
-- Programmed actuator control logic using Arduino (C++)
-- Implemented bidirectional actuator movement logic
-- Designed user input systems using push-button controls
+Additional design efforts included wire management, power routing, strain relief implementation, and modular electronics packaging compatible with MOLLE mounting systems.
 
-### Power and Electronics
-- Integrated:
-  - Arduino UNO R3
-  - L298N motor drivers
-  - 24V lithium-ion battery system
-  - voltage regulation circuitry
-  - WAGO power distribution connectors
+### Software Development
 
-### Electrical Housing Design
-- Designed custom protective electronics housing
-- Implemented modular mounting system compatible with MOLLE webbing
-- Developed wire management and strain-relief solutions
+Implemented actuator control software in C++ using the Arduino IDE. The control architecture managed actuator extension and retraction, user input processing, and safety-related operating constraints while maintaining reliable and intuitive operation.
 
----
+System behavior was modeled using UML-based logic flow diagrams to simplify development, improve maintainability, and ensure predictable operation during testing.
 
-## Software Development
+### Engineering Analysis & Validation
 
-### Control Logic
-Developed actuator control software in C++ using the Arduino IDE.
+Performed engineering calculations and validation activities related to actuator force requirements, support loading, anthropometric sizing, range-of-motion constraints, and structural integration.
 
-Implemented:
-- button state tracking
-- double-press logic
-- actuator extension/retraction control
-- timing-based failsafes
-- bidirectional motor control
-
-### System Architecture
-- Designed UML-based software logic flow
-- Balanced usability with operational simplicity
-- Prioritized reliability in hazardous work environments
-
----
-
-## Engineering Analysis and Testing
-
-### Analytical Engineering
-Performed calculations and validation for:
-- actuator force requirements
-- anthropometric sizing
-- cuff geometry
-- support loading
-- actuator extension limits
-
-### Prototype Validation
-Conducted testing focused on:
-- fatigue reduction
-- support load capability
-- total device weight
-- range of motion
-- operator usability
-
-Testing demonstrated successful reduction of muscular fatigue while maintaining lightweight operation and mobility.
+Prototype testing evaluated fatigue reduction, user comfort, support capability, and overall system usability. Results demonstrated successful load assistance while preserving operator mobility and maintaining a lightweight wearable design.
 
 ---
 
@@ -176,7 +107,3 @@ Testing demonstrated successful reduction of muscular fatigue while maintaining 
 - Received the Principled Innovation Award
 
 ---
-
-## Additional Documentation
-
-[View Full Final Report](../assets/Team21_Final_Report.pdf)
